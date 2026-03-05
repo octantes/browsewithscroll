@@ -1,0 +1,14 @@
+# ignore generated htmls
+
+fonts/fonts.html
+media/media.html
+
+# ignore asset vaults
+
+fonts/vault/
+media/vault/
+
+# ignore os files
+
+.DS_Store
+Thumbs.db
