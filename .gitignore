@@ -6,7 +6,9 @@ media/media.html
 # ignore asset vaults
 
 fonts/vault/
+fonts/fuentes/
 media/vault/
+media/recursos/
 
 # ignore os files
 
