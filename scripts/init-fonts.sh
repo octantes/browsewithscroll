@@ -2,8 +2,8 @@
 
 cd "$(dirname "$0")/../fonts"
 
-# get list of files, wrap in quotes, join with commas and wrap in brackets
-FILES=$(ls *.ttf *.otf *.woff *.woff2 2>/dev/null | sed 's/.*/"&"/' | tr '\n' ',' | sed 's/,$//' | sed 's/.*/[&]/')
+# find matches in subfolders, ignore case, remove leading './', wrap in quotes, join with commas
+FILES=$(find . -type f \( -iname "*.ttf" -o -iname "*.otf" -o -iname "*.woff" -o -iname "*.woff2" \) | sed 's|^\./||' | sed 's/.*/"&"/' | tr '\n' ',' | sed 's/,$//' | sed 's/.*/[&]/')
 
 # handle empty directories
 if [ "$FILES" == "" ] || [ "$FILES" == "[]" ]; then FILES="[]"; fi

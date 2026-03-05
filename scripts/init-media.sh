@@ -4,8 +4,8 @@ cd "$(dirname "$0")/../media"
 
 EXT="jpg|jpeg|png|gif|webp|mp4|webm|mov|ogg"
 
-# get list of files, wrap in quotes, join with commas and wrap in brackets
-FILES=$(ls -p | grep -E "\.($EXT)$" | sed 's/.*/"&"/' | tr '\n' ',' | sed 's/,$//' | sed 's/.*/[&]/')
+# find all files recursively, filter by extension (case-insensitive), remove leading './'
+FILES=$(find . -type f | grep -Ei "\.($EXT)$" | sed 's|^\./||' | sed 's/.*/"&"/' | tr '\n' ',' | sed 's/,$//' | sed 's/.*/[&]/')
 
 # handle empty directories
 if [ "$FILES" == "" ] || [ "$FILES" == "[]" ]; then FILES="[]"; fi
