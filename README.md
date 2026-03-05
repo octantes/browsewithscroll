@@ -1,11 +1,11 @@
 # browsewithscroll
 
 **scroll** is a local tool for previewing and organizing your font and media collections directly in your browser.  
-No internet connection or installation required — simply run the launcher script and it will index your folders into a scrollable interface.
+No internet connection or installation required — simply run the launcher script and it will index your folders, then open a tab.
 
 Built for designers and creators who need a lightweight way to browse local assets without heavy software. Ideal for those who prefer simplicity, privacy, and control. Not for complex asset management, but handles large directories with ease.
 
-All your data stays on your machine. The tool works by "baking" your file lists into static pages, working around CORS for local file access without running a server.
+All your data stays on your machine. The tool works by "baking" your file lists into static pages, working around CORS for local file access without running a server. Remember to `chmod +x launch.sh`!
 
 ![preview](assets/preview.gif)
 
