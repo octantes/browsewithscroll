@@ -1,7 +1,7 @@
 # browsewithscroll
 
 **scroll** is a local tool for previewing and organizing your font and media collections directly in your browser.  
-No internet connection or installation required — simply run the launcher script and it will index your folders, then open a tab.
+No internet connection or installation required — simply run the launcher script and it will index your folders.
 
 Built for designers and creators who need a lightweight way to browse local assets without heavy software. Ideal for those who prefer simplicity, privacy, and control. Not for complex asset management, but handles large directories with ease.
 
