@@ -7,7 +7,7 @@ Built for designers and creators who need a lightweight way to browse local asse
 
 All your data stays on your machine. The tool works by "baking" your file lists into static pages, working around CORS for local file access without running a server.
 
-![preview](assets/preview.mp4)
+<video src="assets/preview.mp4" width="100%" controls autoplay muted loop></video>
 
 ## Features
 
